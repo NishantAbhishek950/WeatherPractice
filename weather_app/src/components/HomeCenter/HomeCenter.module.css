@@ -1,0 +1,259 @@
+
+.homeContainer{
+    width: 70vh;
+    height: 100vh;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -0%)
+}
+
+.searchContainer{
+    position: relative;
+}
+
+.geoCurrentContainer{
+    display: flex;
+    background-color: black;
+    border: 2px solid wheat;
+    max-width: max-content;
+    padding: 2px 10px;
+    margin-bottom: 10px;
+}
+
+.geoCurrent{
+    
+    
+}
+
+.geoCurrentContainer:hover{
+    background-color: var(--secondary-color);
+    cursor: hover;
+}
+.search{
+    font-size: 20px;
+    position: absolute;
+    right: 2%;
+    top: 20%;
+}
+
+
+
+.citySearchField{
+    background-color: red;
+    background-color: rgba(71, 71, 71, 0.856);
+    color: white;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 300px;
+    align-items: flex-start ;
+}
+
+.currentCity{
+    margin: 0px;
+}
+
+p{
+    margin: 0px;
+}
+
+.rainChance{
+    color: var(--color-font-gray);
+}
+
+.currentTemp{
+    color: white;
+    font-size: var(--font-size-title);
+    font-family: monospace;
+}
+
+.currentStats{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 15px;
+}
+
+.sunLogo{
+    width: 120px;
+}
+
+.right{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.hourlyItemContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.hourlyItem{
+    align-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.hourlyItem h3{
+    font-family: monospace;
+}
+
+.hourlyItemContainer{
+    background-color: var(--color-gray-white);
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease;
+
+}
+
+.hourlyItemContainer:hover{
+    cursor: pointer;
+    transform: translateX(10px);
+}
+
+.currentHour {
+    background-color: var(--secondary-color);
+    border-radius: 0px 10px;
+    transition: 0.5s ease;
+}
+
+.currentHour:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.line{
+    width: 3px;
+    background-color: rgb(180, 179, 245);
+    height: 30px;
+}
+
+.todaysForecastContainer{
+    display: flex;
+    flex-direction: row;
+    max-width: 600px;
+    padding: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.todaysForecastContainer::-webkit-scrollbar{
+    background-color: black;
+    height: 7px;
+
+}
+
+.todaysForecastContainer::-webkit-scrollbar-track{
+    background: #333;
+    border-radius: 5px;
+    width: 10px;
+}
+
+.todaysForecastContainer::-webkit-scrollbar-thumb{
+    background: #888;
+    border: 3px;
+}
+
+
+.airContainer{
+    margin-top: 10px;
+    background-color: var(--color-gray-white);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.titleContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+
+
+.seeMoreBtn{
+    padding: 2px 12px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    font-size: var(--font-size-verysmall);
+    cursor: pointer;
+    transition: 0.8s;
+    display: flex;
+    max-width: max-content;
+    padding: 2px 5px;
+    margin-bottom: 5px;
+}
+
+.seeMoreBtn:hover{
+    background: black;
+    cursor: pointer;
+}
+
+.airConditionBox{
+    background-color: var(--color-gray-white);
+    padding: 10px;
+    border-radius: 10px;
+    width: 180px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.airConditionBox:hover{
+    background-color: rgb(248, 170, 24);
+}
+
+.predictionList {
+    background-color: black;
+    border-radius: 3px;
+    width: 100%;
+    max-height: 150px; 
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.predictionItem {
+    width: 100%;
+    height: 40px;
+    border-bottom: 2px solid white;
+    color: white; /* Text color to contrast with black background */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+}
+
+.predictionList::-webkit-scrollbar{
+    background-color: black;
+    width: 8px;
+}
+
+.predictionList::-webkit-scrollbar-track{
+    background: #333;
+    border-radius: 5px;
+    width: 10px;
+}
+
+.predictionList::-webkit-scrollbar-thumb{
+    background: #888;
+    border: 3px;
+}
+
+.placeIcon{
+    margin-right: 15px;
+}
+.predictionItem:hover {
+    background-color: #444; /* Highlight item on hover */
+    cursor: pointer;
+}
+
+.predictionItem:last-child {
+    border-bottom: none; /* Remove the border on the last item */
+}
+
